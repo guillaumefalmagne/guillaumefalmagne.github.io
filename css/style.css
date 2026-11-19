@@ -183,6 +183,7 @@ section { padding: 64px 0; }
    Mobile: [line | date, card, bubbles, secondary steps stacked]               */
 .wrap-wide { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
 #trajectory { padding-top: 24px; }
+.tl-title { margin: 0 0 24px; }
 .timeline {
   --aside: 210px; --rail: 104px; --bubbles: 290px;
   position: relative;

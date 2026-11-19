@@ -69,7 +69,7 @@
       "authors": "with Akilan Ramakrishnan (TU Dublin)",
       "disciplines": ["model", "hum", "games", "gt"],
       "summary": "Mechanisms that promote cooperation come from evolutionary game theory, network science, behavioural economics and ecology, and are rarely compared. This review writes them in one formalism, a repeated prisoner's dilemma played on the links of a network, so they can be compared like for like and tested as variants of the COOLNET game.",
-      "images": ["assets/coolnet/card-vulturephant.webp"],
+      "images": [],
       "link": "coolnet.html"
     },
     {

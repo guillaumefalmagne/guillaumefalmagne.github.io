@@ -1,0 +1,149 @@
+{
+ "_help": "Positions of the papers and disciplines (secondary ones included) in the research network, made with research.html?edit. Anything not listed is placed automatically.",
+ "positions": {
+  "disc:pp": [
+   167,
+   291
+  ],
+  "disc:data": [
+   280,
+   341
+  ],
+  "disc:model": [
+   -172,
+   249
+  ],
+  "disc:ct": [
+   -167,
+   -43
+  ],
+  "disc:net": [
+   -24,
+   167
+  ],
+  "disc:cb": [
+   259,
+   140
+  ],
+  "disc:hum": [
+   331,
+   -69
+  ],
+  "disc:games": [
+   89,
+   6
+  ],
+  "disc:eco": [
+   -79,
+   -179
+  ],
+  "disc:gt": [
+   -205,
+   41
+  ],
+  "disc:ai": [
+   456,
+   68
+  ],
+  "disc:soc": [
+   150,
+   -246
+  ],
+  "disc:pol": [
+   412,
+   -197
+  ],
+  "disc:risk": [
+   276,
+   -238
+  ],
+  "ews-pnas": [
+   79,
+   -82
+  ],
+  "games-phase-space": [
+   -27,
+   -12
+  ],
+  "cooperation-framework": [
+   216,
+   -50
+  ],
+  "ai-belief": [
+   413,
+   163
+  ],
+  "critical-transitions-review": [
+   -19,
+   -129
+  ],
+  "inseparability": [
+   387,
+   -145
+  ],
+  "risk-flourishing": [
+   161,
+   -147
+  ],
+  "pathlength-prd": [
+   392,
+   261
+  ],
+  "pathlength-ichep": [
+   255,
+   227
+  ],
+  "quenching-hp2018": [
+   186,
+   211
+  ],
+  "bc-cms": [
+   121,
+   161
+  ],
+  "muon-cms": [
+   -14,
+   299
+  ],
+  "lambdab-lhcb": [
+   -15,
+   237
+  ],
+  "les-houches": [
+   36,
+   197
+  ],
+  "amazon-tipping": [
+   -113,
+   101
+  ],
+  "cooperation-multilayer": [
+   297,
+   80
+  ],
+  "rplace-network": [
+   114,
+   70
+  ],
+  "rplace-scaling": [
+   232,
+   26
+  ],
+  "climate-denial": [
+   300,
+   -176
+  ],
+  "timescales-dilemmas": [
+   -43,
+   89
+  ],
+  "voter-spectra": [
+   420,
+   -69
+  ],
+  "singing-pitch": [
+   418,
+   23
+  ]
+ }
+}

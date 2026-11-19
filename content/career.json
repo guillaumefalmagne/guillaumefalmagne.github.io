@@ -1,0 +1,131 @@
+[
+  {
+    "id": "soham",
+    "priority": true,
+    "start": "2025", "end": "2030",
+    "role": "PI and team leader of COOLNET",
+    "field": "complex-systems",
+    "institutions": ["SOHAM centre", "TU Dublin", "Trinity College Dublin"],
+    "logos": ["assets/logos/soham.png", "assets/logos/tud.svg", "assets/logos/tcd.svg"],
+    "supervisors": [],
+    "questions": ["What structures promote cooperation at very large scales?", "Can video games be a laboratory for large-scale human behaviour?"],
+    "topics": ["COOLNET project", "large-scale cooperation", "gamification of science","collective human behaviour", "multilayer networks","game theory","risk"],
+    "image": { "src": "assets/sketches/polycentric-network.svg", "fit": "auto 88%", "position": "right 12px center", "opacity": 0.95 }
+  },
+  {
+    "id": "sfi-css",
+    "start": "2024", "end": "2024",
+    "role": "Complex Systems Summer School",
+    "field": "complex-systems",
+    "institutions": ["Santa Fe Institute"],
+    "logos": [],
+    "supervisors": []
+  },
+  {
+    "id": "princeton",
+    "priority": true,
+    "start": "2022", "end": "2025",
+    "role": "Postdoctoral Researcher",
+    "field": "complex-systems",
+    "institutions": ["High Meadows Environmental Institute, Princeton University"],
+    "logos": ["assets/logos/princeton.png", "assets/logos/hmei.png", "assets/logos/princeton-eeb.png"],
+    "supervisors": ["Simon Levin"],
+    "questions": [
+      "Can we predict when critical transitions will happen in large human systems?",
+      "How do tipping cascades propagate in multi-scale systems?"
+    ],
+    "topics": ["complex systems","socio-ecological systems", "r/place", "machine learning", "critical transitions"],
+    "image": { "src": "assets/photos/rplace-2022.webp", "position": "left center", "opacity": 0.95 }
+  },
+  {
+    "id": "subatech",
+    "start": "2022", "end": "2022",
+    "role": "Postdoctoral Researcher",
+    "field": "particle-theory",
+    "institutions": ["Subatech, Nantes"],
+    "logos": ["assets/logos/subatech.jpg"],
+    "supervisors": ["François Arleo"]
+  },
+  {
+    "id": "phd",
+    "priority": true,
+    "start": "2018", "end": "2021",
+    "role": "PhD in particle physics",
+    "field": "particle-experiment",
+    "institutions": ["LLR, École Polytechnique (IP Paris)", "CMS, CERN"],
+    "logos": ["assets/logos/llr.jpg", "assets/logos/polytechnique.png", "assets/logos/cms.png", "assets/logos/cern.jpg"],
+    "supervisors": ["Raphaël Granier de Cassagnac", "François Arleo"],
+    "questions": [
+      "How does the quark-gluon plasma modify the hadronisation of heavy quarks?",
+      "What are the universal scaling laws of partonic energy loss as the medium grows?"
+    ],
+    "topics": ["CMS detector", "B⁺c meson", "heavy-ion collisions", "quark-gluon plasma","energy loss"],
+    "image": { "src": "assets/photos/cms-detector.jpg", "position": "center top", "opacity": 0.9 },
+    "notes": "Thesis awards: IP Paris, GdR QCD, accessit Daniel Guinier (SFP)"
+  },
+  {
+    "id": "msc2",
+    "start": "2017", "end": "2018",
+    "role": "MSc in High Energy Physics",
+    "field": "particle-experiment",
+    "institutions": ["École Polytechnique (U Paris-Saclay)"],
+    "logos": ["assets/logos/polytechnique.png"],
+    "supervisors": [],
+    "notes": "summa cum laude, with a 5-month research internship"
+  },
+  {
+    "id": "travel",
+    "start": "2016", "end": "2017",
+    "role": "Travel & work",
+    "field": null,
+    "institutions": ["South America & Eastern Europe"],
+    "logos": [],
+    "supervisors": [],
+    "link": "https://gipsysupertramp.wordpress.com/",
+    "linkText": "Travel blog"
+  },
+  {
+    "id": "cern",
+    "priority": true,
+    "start": "2015", "end": "2016",
+    "role": "12-month research internship",
+    "field": "particle-experiment",
+    "institutions": ["LHCb, CERN"],
+    "logos": ["assets/logos/lhcb.svg","assets/logos/cern.jpg"],
+    "supervisors": ["Sascha Stahl"],
+    "questions": ["How much are heavy-quark baryons produced versus their anti-particles?"],
+    "topics": ["LHCb detector", "production asymmetry", "b-baryons", "pp collisions"],
+    "image": { "src": "assets/photos/lhcb-event.webp", "fit": "contain", "position": "right center", "background": "#000", "opacity": 0.95 }
+  },
+  {
+    "id": "slac",
+    "start": "2015", "end": "2015",
+    "role": "4-month research internship",
+    "field": "particle-theory",
+    "institutions": ["SLAC, Stanford University"],
+    "logos": ["assets/logos/slac.svg", "assets/logos/stanford-seal.svg"],
+    "supervisors": ["Lance Dixon", "Stefan Hoeche"]
+  },
+  {
+    "id": "llr-intern",
+    "start": "2014", "end": "2014",
+    "role": "2-month research internship",
+    "field": "particle-experiment",
+    "institutions": ["LLR, École Polytechnique"],
+    "logos": ["assets/logos/llr.jpg"],
+    "supervisors": ["Raphaël Granier de Cassagnac"]
+  },
+  {
+    "id": "ens",
+    "priority": true,
+    "start": "2013", "end": "2015",
+    "role": "BSc & MSc in Fundamental Physics",
+    "field": "physics",
+    "institutions": ["École Normale Supérieure Cachan (ENS Paris-Saclay)", "Université Pierre et Marie Curie"],
+    "logos": ["assets/logos/ens-paris-saclay.png", "assets/logos/upmc.png"],
+    "supervisors": [],
+    "questions": [],
+    "notes": ["admitted as 'normalien' after national exams", " full 4-year funding"],
+    "image": null
+  }
+]

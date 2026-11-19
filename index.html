@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guillaume Falmagne</title>
+  <meta name="description" content="Research Fellow and PI in complex systems at SOHAM, TU Dublin & Trinity College Dublin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <blockquote class="quote" id="quote"></blockquote>
+    </div>
+
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <img class="photo" src="assets/photo.jpg" alt="Portrait of Guillaume Falmagne">
+        <div>
+          <h1 id="name"></h1>
+          <p class="title" id="title"></p>
+          <div class="tldr">
+            <div class="mini-label">TL;DR</div>
+            <ul class="summary" id="summary"></ul>
+          </div>
+          <div class="tags" id="interests"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="announcements" id="announcements" hidden>
+      <div class="wrap">
+        <h2 class="section-label">Announcements</h2>
+        <ul class="ann-list" id="ann-list"></ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="teaser">
+          <span class="teaser-logo"><img src="assets/logos/coolnet.png" alt="COOLNET logo"></span>
+          <div>
+            <h2>COOLNET</h2>
+            <p id="coolnet-teaser" style="margin:0 0 14px"></p>
+            <a class="btn" href="coolnet.html">Discover the project →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trajectory">
+      <div class="wrap-wide">
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/site.js"></script>
+  <script src="js/timeline.js"></script>
+  <script>
+    loadJSON("content/profile.json").then(p => {
+      document.getElementById("name").textContent = p.name;
+      // All texts accept **bold**, *italic* and [link](page) (see md() in js/site.js).
+      document.getElementById("title").innerHTML = `${md(p.title)}<br>${md(p.affiliation)}`;
+      document.getElementById("summary").innerHTML = p.summary.map(s => `<li>${md(s)}</li>`).join("");
+      document.getElementById("interests").innerHTML = p.interests.map(t => `<span class="tag">${md(t)}</span>`).join("");
+      document.getElementById("quote").innerHTML =
+        `<p>“${md(p.quote.text)}”</p><footer>— ${md(p.quote.author)}</footer>`;
+      document.getElementById("coolnet-teaser").innerHTML = md(p.coolnet_teaser);
+      // Announcements: the section only shows when profile.json lists at least one.
+      const ann = p.announcements || [];
+      if (ann.length) {
+        document.getElementById("ann-list").innerHTML = ann.map(a => `
+          <li class="ann">
+            <span class="ann-icon" aria-hidden="true">📣</span>
+            <p>${md(a.text)}</p>
+          </li>`).join("");
+        document.getElementById("announcements").hidden = false;
+      }
+    });
+    renderTimeline(document.getElementById("timeline"));
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Kept out of the published site
+
+# local copy of the CV (the site shows the one in github.com/gfalmagn/CV)
+resume.pdf
+
+# local tools and notes
+serve.py
+.claude/
+STRUCTURE.md
+
+# system files
+desktop.ini
+Thumbs.db
+.DS_Store

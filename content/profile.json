@@ -1,0 +1,33 @@
+{
+  "name": "Guillaume Falmagne",
+  "title": "PI and Team Leader in complex systems",
+  "affiliation": "SOHAM, Trinity College Dublin & TU Dublin",
+  "quote": {
+    "text": "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
+    "author": "Albert Einstein"
+  },
+  "summary": [
+    "Complex Systems 🌀 interdisciplinary nerd with a particle physics ⚛️ background.",
+    "Creator and Leader of the **COOLNET** project: **C**ooperation 🤝 in **L**arge-scale **NET**works, using a video game 🎮 to validate cooperation mechanisms experimentally!",
+    "Formerly postdoc at Princeton and PhD at École Polytechnique."
+  ],
+  "interests": [
+    "game theory", "cooperation", "networks", "collective human behaviour", "emergent phenomena",
+    "critical transitions", "social tipping points", "machine learning", "particle physics", "quark-gluon plasma"
+  ],
+  "announcements": [
+    {
+      "text": "**We're looking for a Game Programmer Intern** (Unity / C#, January to June 2027, Dublin) to help on our game Nova Fauna: [see the call](https://www.moddb.com/jobs/game-programmer-intern1). We're also open to hosting interns on **cooperation network modelling and complex systems**: [get in touch](contact.html)!"
+    },
+    {
+      "text": "I am organising a **Workshop on Gamification of Science** in Dublin on **May 31 - June 2, 2027**. Stay tuned for more information on participation, and [contact me](contact.html) if interested!"
+    }
+  ],
+  "coolnet_teaser": "COOLNET looks for mechanisms that promote cooperation at large scales, and tests them experimentally with a massively multiplayer video game. A 5-year project funded with €1.2 million.",
+  "links": {
+    "email": "guillaume.falmagne@tcd.ie",
+    "orcid": "https://orcid.org/0000-0002-6762-3937",
+    "linkedin": "https://www.linkedin.com/in/guillaume-falmagne-573a52a1/",
+    "soham": "https://www.tcd.ie/soham/"
+  }
+}

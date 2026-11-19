@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .cv-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+    .cv-pages { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+    .cv-pages canvas {
+      width: 100%; max-width: 860px; height: auto; background: #fff;
+      border: 1px solid var(--line); border-radius: 6px; box-shadow: var(--shadow);
+    }
+    .cv-status { text-align: center; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="page-head">
+      <h1>CV</h1>
+      <p class="muted">The always up-to-date version is hosted on GitHub.</p>
+      <div class="cv-actions">
+        <a class="btn" id="cv-download" href="https://github.com/gfalmagn/CV/raw/main/CV_GuillaumeFalmagne.pdf">Download the CV (PDF)</a>
+        <a class="btn ghost" href="https://github.com/gfalmagn/CV">View on GitHub</a>
+      </div>
+    </header>
+    <section style="padding-top:24px">
+      <p class="cv-status" id="cv-status">Loading the CV…</p>
+      <div class="cv-pages" id="cv-pages"></div>
+    </section>
+  </main>
+  <script src="js/site.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    // The CV PDF lives in the github.com/gfalmagn/CV repository.
+    // It is rendered here with PDF.js, so this page always shows the latest version pushed there.
+    const CV_URL = "https://raw.githubusercontent.com/gfalmagn/CV/main/CV_GuillaumeFalmagne.pdf";
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+    async function renderCV(url) {
+      const pdf = await pdfjsLib.getDocument(url).promise;
+      const box = document.getElementById("cv-pages");
+      const scale = Math.min(2, window.devicePixelRatio || 1) * 1.6;
+      for (let n = 1; n <= pdf.numPages; n++) {
+        const page = await pdf.getPage(n);
+        const vp = page.getViewport({ scale });
+        const canvas = document.createElement("canvas");
+        canvas.width = vp.width; canvas.height = vp.height;
+        canvas.setAttribute("aria-label", `CV page ${n}`);
+        box.appendChild(canvas);
+        await page.render({ canvasContext: canvas.getContext("2d"), viewport: vp }).promise;
+      }
+    }
+
+    renderCV(CV_URL)
+      .then(() => document.getElementById("cv-status").remove())
+      .catch(() => document.getElementById("cv-status").innerHTML =
+        'The CV could not be displayed here. <a href="' + CV_URL + '">Open it directly</a>.');
+  </script>
+</body>
+</html>

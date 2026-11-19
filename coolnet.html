@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COOLNET project</title>
+  <meta name="description" content="COOLNET: cooperation in large-scale networks, tested with Nova Fauna, a multiplayer game built as a laboratory for collective behaviour. And COOLAB, its spin-off for organisations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="wrap">
+
+    <!-- ============ header ============ -->
+    <header class="cn-head">
+      <span class="cn-logo"><img src="assets/logos/coolnet.png" alt="COOLNET logo"></span>
+      <div>
+        <h1>COOLNET</h1>
+        <p class="cn-sub"><strong>COO</strong>peration in <strong>L</strong>arge-scale <strong>NET</strong>works</p>
+        <p class="cn-lead">Why do people cooperate, and what would make them do at the scale of a whole society?
+          We build a video game to find out.</p>
+        <p class="muted small">For the Frenchies: CORESO, COopération dans les Réseaux de grande échelle, Expérimentation des Structures Optimales.</p>
+      </div>
+    </header>
+
+    <nav class="cn-jump" aria-label="On this page">
+      <a href="#question">Question</a>
+      <a href="#game">Nova Fauna</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#team">Team</a>
+      <a href="#join">Join us</a>
+      <a href="#coolab">COOLAB spin-off</a>
+      <a class="cn-li" href="https://www.linkedin.com/company/coolnet-cooperation-in-large-scale-networks/">Follow on LinkedIn</a>
+    </nav>
+
+    <!-- ============ the question ============ -->
+    <section id="question" class="cn-sec">
+      <h2>Question and setup</h2>
+      <div class="prose">
+        <p>The causes and solutions of the environmental crisis are known; yet, solutions are not implemented fast enough. This is a cooperation problem: a healthy environment benefits everyone, including those who
+          damage it or don't contribute.</p>
+        <p>Multiple mechanisms were shown to foster cooperation, but most are limited to small groups.
+          <strong>COOLNET looks for structures of social interactions that can foster cooperation at every scale</strong>,
+          up to a whole society:</p>
+      </div>
+      <div class="cn-two">
+        <div class="cn-card">
+          <h3>One theory for many mechanisms</h3>
+          <p>We gather cooperation mechanisms from network science, behavioural economics, ecology and psychology, and
+            write them all as an iterated prisoner's dilemma played on the links of a network. An apple-to-apple comparison of hypotheses from usually disconnected fields!</p>
+        </div>
+        <div class="cn-card">
+          <h3>A game as a laboratory</h3>
+          <p>Lab experiments are small; field studies lack experimental control. A game gives both: we aim for thousands of players on a network in controlled conditions. Each mechanism is implemented as a game variant;
+            we can then compare cooperation levels in each independent variant.</p>
+        </div>
+      </div>
+      <figure class="cn-worlds">
+        <div class="cn-worlds-row">
+          <div class="cn-world"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="w-bg" cx="100" cy="100" r="92"/><line class="w-link " x1="117.7" y1="71.7" x2="82.3" y2="71.7"/><line class="w-link " x1="117.7" y1="71.7" x2="82.3" y2="36.3"/><line class="w-link " x1="117.7" y1="71.7" x2="117.7" y2="36.3"/><line class="w-link " x1="82.3" y1="71.7" x2="82.3" y2="36.3"/><line class="w-link " x1="82.3" y1="71.7" x2="117.7" y2="36.3"/><line class="w-link " x1="82.3" y1="36.3" x2="117.7" y2="36.3"/><line class="w-link " x1="157.5" y1="140.7" x2="122.2" y2="140.7"/><line class="w-link " x1="157.5" y1="140.7" x2="122.2" y2="105.3"/><line class="w-link " x1="157.5" y1="140.7" x2="157.5" y2="105.3"/><line class="w-link " x1="122.2" y1="140.7" x2="122.2" y2="105.3"/><line class="w-link " x1="122.2" y1="140.7" x2="157.5" y2="105.3"/><line class="w-link " x1="122.2" y1="105.3" x2="157.5" y2="105.3"/><line class="w-link " x1="77.8" y1="140.7" x2="42.5" y2="140.7"/><line class="w-link " x1="77.8" y1="140.7" x2="42.5" y2="105.3"/><line class="w-link " x1="77.8" y1="140.7" x2="77.8" y2="105.3"/><line class="w-link " x1="42.5" y1="140.7" x2="42.5" y2="105.3"/><line class="w-link " x1="42.5" y1="140.7" x2="77.8" y2="105.3"/><line class="w-link " x1="42.5" y1="105.3" x2="77.8" y2="105.3"/><line class="w-link w-weak" x1="82.3" y1="71.7" x2="157.5" y2="105.3"/><line class="w-link w-weak" x1="122.2" y1="140.7" x2="77.8" y2="105.3"/><line class="w-link w-weak" x1="42.5" y1="140.7" x2="117.7" y2="36.3"/><circle class="w-node " cx="117.7" cy="71.7" r="6.5"/><circle class="w-node " cx="82.3" cy="71.7" r="6.5"/><circle class="w-node " cx="82.3" cy="36.3" r="6.5"/><circle class="w-node " cx="117.7" cy="36.3" r="6.5"/><circle class="w-node " cx="157.5" cy="140.7" r="6.5"/><circle class="w-node " cx="122.2" cy="140.7" r="6.5"/><circle class="w-node " cx="122.2" cy="105.3" r="6.5"/><circle class="w-node " cx="157.5" cy="105.3" r="6.5"/><circle class="w-node " cx="77.8" cy="140.7" r="6.5"/><circle class="w-node " cx="42.5" cy="140.7" r="6.5"/><circle class="w-node " cx="42.5" cy="105.3" r="6.5"/><circle class="w-node " cx="77.8" cy="105.3" r="6.5"/></svg><b>Modular world</b><span>tight groups, few bridges</span><em>cooperation: ?</em></div>
+          <div class="cn-world"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="w-bg" cx="100" cy="100" r="92"/><line class="w-link " x1="100.0" y1="34.0" x2="52.0" y2="84.0"/><line class="w-link " x1="100.0" y1="34.0" x2="100.0" y2="84.0"/><line class="w-link " x1="100.0" y1="34.0" x2="148.0" y2="84.0"/><line class="w-link " x1="52.0" y1="84.0" x2="34.0" y2="140.0"/><line class="w-link " x1="52.0" y1="84.0" x2="70.0" y2="140.0"/><line class="w-link " x1="100.0" y1="84.0" x2="82.0" y2="140.0"/><line class="w-link " x1="100.0" y1="84.0" x2="118.0" y2="140.0"/><line class="w-link " x1="148.0" y1="84.0" x2="130.0" y2="140.0"/><line class="w-link " x1="148.0" y1="84.0" x2="166.0" y2="140.0"/><circle class="w-node " cx="100.0" cy="34.0" r="6.5"/><circle class="w-node " cx="52.0" cy="84.0" r="6.5"/><circle class="w-node " cx="100.0" cy="84.0" r="6.5"/><circle class="w-node " cx="148.0" cy="84.0" r="6.5"/><circle class="w-node " cx="34.0" cy="140.0" r="6.5"/><circle class="w-node " cx="70.0" cy="140.0" r="6.5"/><circle class="w-node " cx="82.0" cy="140.0" r="6.5"/><circle class="w-node " cx="118.0" cy="140.0" r="6.5"/><circle class="w-node " cx="130.0" cy="140.0" r="6.5"/><circle class="w-node " cx="166.0" cy="140.0" r="6.5"/></svg><b>Hierarchical world</b><span>imbalanced power</span><em>cooperation: ?</em></div>
+          <div class="cn-world"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="w-bg" cx="100" cy="100" r="92"/><line class="w-link " x1="159.2" y1="118.3" x2="133.6" y2="152.1"/><line class="w-link " x1="133.6" y1="152.1" x2="92.2" y2="161.5"/><line class="w-link " x1="92.2" y1="161.5" x2="54.5" y2="142.1"/><line class="w-link " x1="54.5" y1="142.1" x2="38.1" y2="103.0"/><line class="w-link " x1="38.1" y1="103.0" x2="50.6" y2="62.5"/><line class="w-link " x1="50.6" y1="62.5" x2="86.3" y2="39.5"/><line class="w-link " x1="86.3" y1="39.5" x2="128.3" y2="44.9"/><line class="w-link " x1="128.3" y1="44.9" x2="157.2" y2="76.0"/><line class="w-link " x1="157.2" y1="76.0" x2="159.2" y2="118.3"/><line class="w-link " x1="100.0" y1="100.0" x2="159.2" y2="118.3"/><line class="w-link " x1="100.0" y1="100.0" x2="54.5" y2="142.1"/><line class="w-link " x1="100.0" y1="100.0" x2="86.3" y2="39.5"/><line class="w-link " x1="133.6" y1="152.1" x2="50.6" y2="62.5"/><line class="w-link " x1="92.2" y1="161.5" x2="128.3" y2="44.9"/><path class="w-heart" transform="translate(146.4,131.2) scale(0.85)" d="M0 5C-1.2 3.8-8 -0.6-8 -4.6C-8 -7.4-5.9 -9.2-3.7 -9.2C-2 -9.2-0.7 -8.2 0 -6.8C0.7 -8.2 2 -9.2 3.7 -9.2C5.9 -9.2 8 -7.4 8 -4.6C8 -0.6 1.2 3.8 0 5Z" /><path class="w-heart" transform="translate(46.3,118.6) scale(0.85)" d="M0 5C-1.2 3.8-8 -0.6-8 -4.6C-8 -7.4-5.9 -9.2-3.7 -9.2C-2 -9.2-0.7 -8.2 0 -6.8C0.7 -8.2 2 -9.2 3.7 -9.2C5.9 -9.2 8 -7.4 8 -4.6C8 -0.6 1.2 3.8 0 5Z" /><path class="w-heart" transform="translate(107.3,38.2) scale(0.85)" d="M0 5C-1.2 3.8-8 -0.6-8 -4.6C-8 -7.4-5.9 -9.2-3.7 -9.2C-2 -9.2-0.7 -8.2 0 -6.8C0.7 -8.2 2 -9.2 3.7 -9.2C5.9 -9.2 8 -7.4 8 -4.6C8 -0.6 1.2 3.8 0 5Z" /><path class="w-heart" transform="translate(77.3,117.1) scale(0.85)" d="M0 5C-1.2 3.8-8 -0.6-8 -4.6C-8 -7.4-5.9 -9.2-3.7 -9.2C-2 -9.2-0.7 -8.2 0 -6.8C0.7 -8.2 2 -9.2 3.7 -9.2C5.9 -9.2 8 -7.4 8 -4.6C8 -0.6 1.2 3.8 0 5Z" /><path class="w-heart" transform="translate(75.5,86.4) scale(0.85)" d="M0 5C-1.2 3.8-8 -0.6-8 -4.6C-8 -7.4-5.9 -9.2-3.7 -9.2C-2 -9.2-0.7 -8.2 0 -6.8C0.7 -8.2 2 -9.2 3.7 -9.2C5.9 -9.2 8 -7.4 8 -4.6C8 -0.6 1.2 3.8 0 5Z" /><circle class="w-node " cx="159.2" cy="118.3" r="6.5"/><circle class="w-node " cx="133.6" cy="152.1" r="6.5"/><circle class="w-node " cx="92.2" cy="161.5" r="6.5"/><circle class="w-node " cx="54.5" cy="142.1" r="6.5"/><circle class="w-node " cx="38.1" cy="103.0" r="6.5"/><circle class="w-node " cx="50.6" cy="62.5" r="6.5"/><circle class="w-node " cx="86.3" cy="39.5" r="6.5"/><circle class="w-node " cx="128.3" cy="44.9" r="6.5"/><circle class="w-node " cx="157.2" cy="76.0" r="6.5"/><circle class="w-node " cx="100.0" cy="100.0" r="6.5"/></svg><b>Altruistic world</b><span>reward when others gain</span><em>cooperation: ?</em></div>
+          <div class="cn-world"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="w-bg" cx="100" cy="100" r="92"/><line class="w-link " x1="138.5" y1="148.6" x2="98.3" y2="162.0"/><line class="w-link " x1="98.3" y1="162.0" x2="58.9" y2="146.4"/><line class="w-link " x1="58.9" y1="146.4" x2="38.7" y2="109.1"/><line class="w-link " x1="38.7" y1="109.1" x2="47.2" y2="67.5"/><line class="w-link " x1="47.2" y1="67.5" x2="80.4" y2="41.2"/><line class="w-link " x1="80.4" y1="41.2" x2="122.8" y2="42.3"/><line class="w-link " x1="122.8" y1="42.3" x2="154.5" y2="70.5"/><line class="w-link " x1="154.5" y1="70.5" x2="160.7" y2="112.4"/><line class="w-link " x1="160.7" y1="112.4" x2="138.5" y2="148.6"/><line class="w-link " x1="100.0" y1="100.0" x2="98.3" y2="162.0"/><line class="w-link " x1="100.0" y1="100.0" x2="47.2" y2="67.5"/><line class="w-link " x1="100.0" y1="100.0" x2="154.5" y2="70.5"/><line class="w-link " x1="138.5" y1="148.6" x2="80.4" y2="41.2"/><line class="w-link " x1="58.9" y1="146.4" x2="122.8" y2="42.3"/><circle class="w-tag" cx="38.7" cy="109.1" r="12"/><circle class="w-tag" cx="160.7" cy="112.4" r="12"/><circle class="w-node " cx="138.5" cy="148.6" r="6.5"/><circle class="w-node " cx="98.3" cy="162.0" r="6.5"/><circle class="w-node " cx="58.9" cy="146.4" r="6.5"/><circle class="w-node w-tagged" cx="38.7" cy="109.1" r="6.5"/><circle class="w-node " cx="47.2" cy="67.5" r="6.5"/><circle class="w-node " cx="80.4" cy="41.2" r="6.5"/><circle class="w-node " cx="122.8" cy="42.3" r="6.5"/><circle class="w-node " cx="154.5" cy="70.5" r="6.5"/><circle class="w-node w-tagged" cx="160.7" cy="112.4" r="6.5"/><circle class="w-node " cx="100.0" cy="100.0" r="6.5"/></svg><b>Reputation world</b><span>defectors are tagged</span><em>cooperation: ?</em></div>
+          <div class="cn-world-more">
+          <span class="cn-more-dots" aria-hidden="true">…</span>
+          <ul>
+            <li>Binding contracts</li>
+            <li>Laws and taxes</li>
+            <li>Polycentric governance</li>
+            <li>Social tipping points</li>
+            <li>Multilayer networks</li>
+            <li class="cn-more-etc">and more</li>
+          </ul>
+        </div>
+        </div>
+        <figcaption>Same game, but each world has one differing rule. Comparing cooperation levels tells us what mechanism is most efficient!</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ Nova Fauna ============ -->
+    <section id="game" class="cn-sec">
+      <h2>Nova Fauna, our game</h2>
+      <div class="cn-game">
+        <div class="prose">
+          <p><i>Earth now brings complex life to distant planets. This one only has plants so far, but you can
+            help populate it with the most fantastical animals you can imagine, starting with your own park reserve. Make it
+            worth a trip for interstellar tourists, whose visits keep your park running. Merge species into creatures from
+            your wildest dreams, but only if your neighbouring parks are willing to help... Then breed and clone your sweethearts,
+            trade on the market, and release them into the wild to grow the planet's biodiversity.</i></p>
+          <p>Players meet their network neighbours, one at a time, and choose to either try to <strong>merge</strong> one of their
+            animals with their neighbour's animal to get a new hybrid species, or to <strong>steal</strong> their neighbour's animal.
+            That's the prisoner's dilemma, played with the animals you dreamt of as a kid. When not pondering whether to
+            play nice, players customise their animals and browse their encyclopedia of species.</p>
+          <p>Each mod adds a mechanism to test, some by changing the interaction network itself (who plays merge-or-steal
+            with whom). The game is asynchronous: a few minutes a day, over a game lasting 10 to 20 days.</p>
+        <figure class="cn-cards">
+          <div class="cn-cards-row">
+            <img src="assets/coolnet/card-vulture.webp" alt="Vulture card" loading="lazy">
+            <span aria-hidden="true">+</span>
+            <img src="assets/coolnet/card-elephant.webp" alt="Elephant card" loading="lazy">
+            <span aria-hidden="true">=</span>
+            <img src="assets/coolnet/card-vulturephant.webp" alt="Vulturephant card, the hybrid of the two" loading="lazy">
+          </div>
+          <figcaption>Cooperation creates hybrids. Meet the vulturephant.</figcaption>
+        </figure>
+        </div>
+        <figure class="cn-phones">
+          <img src="assets/coolnet/nova-fauna-dilemma.webp" alt="Mock-up of the merge-or-steal screen, with a winged elephant" loading="lazy">
+          <figcaption>Early mock-up: merge or steal?</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ roadmap ============ -->
+    <section id="roadmap" class="cn-sec">
+      <h2>Roadmap</h2>
+      <ol class="cn-road">
+        <li><span class="cn-year">2025–26</span><div><b>Concept and pre-production.<br></b> From twelve game concepts to a first prototype; theoretical framework and experimental design.</div></li>
+        <li><span class="cn-year">2027</span><div><b>Local experiments</b> with 100 to 1,000 players. <br><b>A workshop on Gamification of Science</b> in Dublin, 31 May – 2 June 2027.</div></li>
+        <li><span class="cn-year">2028</span><div><b>Online release</b> and large-scale experiments with 10,000+ players.</div></li>
+        <li><span class="cn-year">2029–30</span><div><b>Results and transfer:</b> papers, policy recommendations and a public symposium.
+          We also hope to turn the game into a workshop for local collective decisions, a similar direction to our <a href="#coolab">COOLAB spin-off</a>.</div></li>
+      </ol>
+      <p class="muted small">COOLNET runs from July 2025 to June 2030, funded by a €1 million Prize from the
+        Lopez-Loreta Foundation, with an additional TU Dublin contribution (€1.2 million total).</p>
+    </section>
+
+    <!-- ============ team ============ -->
+    <section id="team" class="cn-sec">
+      <h2>Team</h2>
+      <ul class="cn-team">
+        <li><img src="assets/team/falmagne.webp" alt="" loading="lazy"><div><b><a href="index.html">Guillaume Falmagne</a></b>
+          <span>Principal Investigator</span><small>Complex systems and collective behaviour. Formerly Princeton, École Polytechnique, CERN.</small></div></li>
+        <li><img src="assets/team/romero.webp" alt="" loading="lazy"><div><b>Sergio Romero</b>
+          <span>Senior Game Designer</span><small>Game systems and economies.</small></div></li>
+        <li><img src="assets/team/oconnor.webp" alt="" loading="lazy"><div><b>Pádraig O'Connor</b>
+          <span>Senior Games Programmer</span><small>Multiplayer games and client-server architecture.</small></div></li>
+        <li><img src="assets/team/ramakrishnan.webp" alt="" loading="lazy"><div><b>Akilan Ramakrishnan</b>
+          <span>PhD Researcher</span><small>Cooperation mechanisms across disciplines.</small></div></li>
+      </ul>
+      <p class="muted">Joining in 2027: an artist and a postdoctoral researcher.</p>
+      <div class="cn-two">
+        <div class="cn-card">
+          <h3>Our host</h3>
+          <p>COOLNET is set within <a href="https://www.tcd.ie/soham/">SOHAM</a>, the Centre for Sociology Of Humans And Machines, joint between Trinity College Dublin and TU Dublin. We work on TU Dublin's Grangegorman campus.</p>
+        </div>
+        <div class="cn-card">
+          <h3>Our partners</h3>
+          <p>Princeton University, the SPIRAL centre at École Polytechnique, and the Potsdam Institute for Climate Impact
+            Research (PIK), SciFunGames, XPForward.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ join us ============ -->
+    <section id="join" class="cn-sec">
+      <h2>Join us</h2>
+      <div class="cn-two">
+        <div class="cn-card cn-open">
+          <span class="cn-badge">Open now</span>
+          <h3>Game Programmer Intern</h3>
+          <p>Build Nova Fauna's multiplayer features in Unity and C#, test them, and help run playtests.
+            January to June 2027, full time on site in Dublin. Unpaid placement.</p>
+          <a class="btn" href="https://www.moddb.com/jobs/game-programmer-intern1">See the call →</a>
+        </div>
+        <div class="cn-card cn-open">
+          <span class="cn-badge">Anytime</span>
+          <h3>Research interns</h3>
+          <p>Into modelling cooperation on networks, or complex systems more broadly? We're also open to hosting interns
+            on the research side.</p>
+          <a class="btn" href="contact.html">Get in touch →</a>
+        </div>
+      </div>
+      <div class="cn-card cn-soon">
+        <span class="cn-badge">Coming soon</span>
+        <ul>
+          <li><b>Game Artist</b>: give Nova Fauna's hybrid animals and worlds their look, 4-month contract in early 2027.</li>
+          <li><b>Postdoctoral researcher</b>: model cooperation on multilayer networks and run our large-scale experiments,
+            for three years from mid-2027.</li>
+        </ul>
+        <p>Stay tuned: the calls will be posted here and on <a href="https://www.linkedin.com/company/coolnet-cooperation-in-large-scale-networks/">LinkedIn</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ COOLAB spin-off ============ -->
+    <section id="coolab" class="cn-sec cn-lab">
+      <span class="cn-kicker">Spin-off</span>
+      <h2>COOLAB, the COOperation LAB</h2>
+      <p class="cn-lead">Play together, learn to cooperate, and improve your whole organisation.</p>
+      <div class="prose">
+        <p>Cooperation drives team performance, but surveys and generic advice don't show where it breaks down.
+          The good news from research: cooperation depends more on the environment than on personality, so structure
+          and awareness can change it. COOLAB turns Nova Fauna into a tool for organisations.</p>
+      </div>
+      <ol class="cn-steps">
+        <li><b>Play</b><p>Everyone plays together and senses how their choices affect the group. Data is anonymised,
+          and each player gets a personal report.</p></li>
+        <li><b>Evaluate</b><p>The game network mirrors the structure of the organisation, which we test against research-inspired
+          alternatives. An automated report shows cooperation levels, group dynamics and routes to progress.</p></li>
+        <li><b>Improve</b><p>Recommendations for low-cost cultural and structural changes, and regular sessions to
+          follow progress.</p></li>
+      </ol>
+      <figure class="cn-diagram">
+        <img src="assets/coolnet/structure-before-after.webp" alt="An organisation chart before and after: adding links between departments turns neutral faces into smiling ones" loading="lazy">
+        <figcaption>Same people, better-connected structure.</figcaption>
+      </figure>
+      <div class="cn-two">
+        <div class="cn-card">
+          <h3>Who is it for?</h3>
+          <p>Companies integrating teams after a merger, breaking silos, or testing a reorganisation before making it.
+            Public bodies and NGOs aligning stakeholders around common goods issues.</p>
+        </div>
+        <div class="cn-card">
+          <h3>Development stage</h3>
+          <p>We're applying to Enterprise Ireland's Commercialisation Fund PoC and ARC Hub for ICT to adapt Nova Fauna into a product, run
+            first tests, and secure our first customers.</p>
+        </div>
+      </div>
+      <p class="cn-cta">Want to try it with your team? We're looking for pilot partners. <a class="btn" href="contact.html">Get in touch →</a></p>
+    </section>
+
+  </main>
+  <script src="js/site.js"></script>
+</body>
+</html>
